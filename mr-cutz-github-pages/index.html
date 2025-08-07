@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title data-i18n="site_title">Mr.Cutz Mens Beauty Parlour | Barber & Grooming</title>
+  <meta name="description" content="Mr.Cutz Mens Beauty Parlour — precision haircuts, beard styling, shaves, and grooming." />
+  <meta name="theme-color" content="#0f172a" />
+
+  <link rel="icon" href="favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+
+  <!-- Header (always visible) -->
+  <header class="site-header" data-scroll-shadow>
+    <div class="container header-inner">
+      <a class="brand" href="#" aria-label="Mr.Cutz home">
+        <img src="https://source.unsplash.com/72x72/?barber,scissors,logo" alt="" class="brand-mark" />
+        <span class="brand-text">Mr.Cutz</span>
+      </a>
+
+      <div class="header-actions">
+        <button id="lang-toggle" class="btn btn--ghost btn--sm" aria-pressed="false">தமிழ்</button>
+        <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">
+          <span class="sr-only" data-i18n="toggle_nav">Toggle navigation</span>
+          <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </button>
+      </div>
+
+      <nav id="primary-nav" class="nav">
+        <ul>
+          <li><a href="#services" data-i18n="nav_services">Services</a></li>
+          <li><a href="#pricing" data-i18n="nav_pricing">Pricing</a></li>
+          <li><a href="#barbers" data-i18n="nav_barbers">Barbers</a></li>
+          <li><a href="#gallery" data-i18n="nav_gallery">Gallery</a></li>
+          <li><a href="#contact" class="btn btn--sm" data-i18n="nav_contact">Find Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero" role="banner">
+      <picture>
+        <source media="(min-width: 1024px)" srcset="https://source.unsplash.com/1600x900/?india,barbershop,men">
+        <source media="(min-width: 640px)" srcset="https://source.unsplash.com/1400x900/?india,barber,haircut">
+        <img src="https://source.unsplash.com/1200x800/?indian,barber,haircut" alt="Indian client getting a haircut in a barbershop" />
+      </picture>
+      <div class="hero-overlay">
+        <div class="container">
+          <h1><span class="script" data-i18n="hero_sharp">Sharp.</span> <span data-i18n="hero_clean">Clean.</span> <span data-i18n="hero_confident">Confident.</span></h1>
+          <p data-i18n="hero_sub">Precision haircuts, beard styling, shaves, and grooming done right.</p>
+          <div class="hero-cta">
+            <a href="#contact" class="btn btn--primary" data-i18n="cta_find_us">Get Directions</a>
+            <a href="tel:+919876543210" class="btn btn--ghost" data-i18n="cta_call">Call Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Badges -->
+    <section class="badges">
+      <div class="container badges-grid">
+        <div class="badge"><span>★ ★ ★ ★ ★</span><small data-i18n="badge_rated">Rated by locals</small></div>
+        <div class="badge"><span data-i18n="badge_hygiene_title">Hygiene+ Certified</span><small data-i18n="badge_hygiene_sub">Tools sanitized</small></div>
+        <div class="badge"><span data-i18n="badge_walkins">Walk-ins Welcome</span><small data-i18n="badge_hours">9 AM – 9 PM</small></div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="section">
+      <div class="container">
+        <header class="section-head">
+          <h2 data-i18n="services_title">Services</h2>
+          <p data-i18n="services_sub">Classic cuts to modern fades — plus beard care, shaves, facials, and more.</p>
+        </header>
+        <div class="cards services-grid">
+          <article class="card" data-reveal>
+            <img src="https://source.unsplash.com/1200x900/?india,barber,haircut" alt="Haircut service at Indian barbershop" loading="lazy">
+            <div class="card-body">
+              <h3 data-i18n="svc_haircut">Haircut</h3>
+              <p data-i18n="svc_haircut_desc">Tailored scissor & clipper work, finished with styling.</p>
+            </div>
+          </article>
+          <article class="card" data-reveal>
+            <img src="https://source.unsplash.com/1200x900/?india,barber,beard" alt="Beard trim and line-up" loading="lazy">
+            <div class="card-body">
+              <h3 data-i18n="svc_beard">Beard Trim</h3>
+              <p data-i18n="svc_beard_desc">Line-ups, fades, and oil finish for a clean profile.</p>
+            </div>
+          </article>
+          <article class="card" data-reveal>
+            <img src="https://source.unsplash.com/1200x900/?india,barber,shave" alt="Traditional hot towel shave" loading="lazy">
+            <div class="card-body">
+              <h3 data-i18n="svc_shave">Hot Towel Shave</h3>
+              <p data-i18n="svc_shave_desc">Classic hot towel, rich lather, straight razor shave.</p>
+            </div>
+          </article>
+          <article class="card" data-reveal>
+            <img src="https://source.unsplash.com/1200x900/?india,facial,spa,men" alt="Facial and skin care for men" loading="lazy">
+            <div class="card-body">
+              <h3 data-i18n="svc_facial">Facial</h3>
+              <p data-i18n="svc_facial_desc">Deep cleanse and refresh for healthier skin.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="section section--alt">
+      <div class="container">
+        <header class="section-head">
+          <h2 data-i18n="pricing_title">Pricing</h2>
+          <p data-i18n="pricing_sub">Transparent, fair, and worth every snip.</p>
+        </header>
+        <div class="pricing-grid">
+          <div class="price-card" data-reveal>
+            <h3 data-i18n="svc_haircut">Haircut</h3>
+            <p class="price">₹299</p>
+            <ul>
+              <li data-i18n="inc_consult">Consultation</li>
+              <li data-i18n="inc_wash">Wash & Style</li>
+              <li data-i18n="inc_finish">Finishing product</li>
+            </ul>
+          </div>
+          <div class="price-card price-card--featured" data-reveal>
+            <div class="ribbon" data-i18n="popular">Popular</div>
+            <h3 data-i18n="svc_combo">Cut + Beard</h3>
+            <p class="price">₹449</p>
+            <ul>
+              <li data-i18n="combo_1">Precision fade or scissor cut</li>
+              <li data-i18n="combo_2">Beard shaping & line-up</li>
+              <li data-i18n="combo_3">Hot towel finish</li>
+            </ul>
+          </div>
+          <div class="price-card" data-reveal>
+            <h3 data-i18n="svc_shave_short">Shave</h3>
+            <p class="price">₹199</p>
+            <ul>
+              <li data-i18n="shave_1">Hot towel prep</li>
+              <li data-i18n="shave_2">Razor shave</li>
+              <li data-i18n="shave_3">After-shave balm</li>
+            </ul>
+          </div>
+          <div class="price-card" data-reveal>
+            <h3 data-i18n="svc_facial">Facial</h3>
+            <p class="price">₹349</p>
+            <ul>
+              <li data-i18n="facial_1">Cleanse & exfoliate</li>
+              <li data-i18n="facial_2">Mask & massage</li>
+              <li data-i18n="facial_3">Moisturize</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Barbers -->
+    <section id="barbers" class="section">
+      <div class="container">
+        <header class="section-head">
+          <h2 data-i18n="barbers_title">Meet the Barbers</h2>
+          <p data-i18n="barbers_sub">Experienced hands. Friendly faces.</p>
+        </header>
+        <div class="team-grid">
+          <article class="team-card" data-reveal>
+            <img src="https://source.unsplash.com/200x200/?india,barber,portrait" alt="Lead Barber">
+            <div>
+              <h3 data-i18n="barber_1">Arun</h3>
+              <p data-i18n="barber_1_desc">Fade specialist • 8+ yrs</p>
+            </div>
+          </article>
+          <article class="team-card" data-reveal>
+            <img src="https://source.unsplash.com/200x200/?india,barber,man" alt="Senior Barber">
+            <div>
+              <h3 data-i18n="barber_2">Rahul</h3>
+              <p data-i18n="barber_2_desc">Classic cuts • Beard styling</p>
+            </div>
+          </article>
+          <article class="team-card" data-reveal>
+            <img src="https://source.unsplash.com/200x200/?india,barbershop,man" alt="Barber">
+            <div>
+              <h3 data-i18n="barber_3">Vijay</h3>
+              <p data-i18n="barber_3_desc">Razor shaves • Facials</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="section section--alt">
+      <div class="container">
+        <header class="section-head">
+          <h2 data-i18n="gallery_title">Gallery</h2>
+          <p data-i18n="gallery_sub">Fresh cuts & sharp looks.</p>
+        </header>
+        <div class="gallery-grid">
+          <img src="https://source.unsplash.com/800x800/?india,barbershop,chair" alt="Barber chair in India" loading="lazy" data-reveal>
+          <img src="https://source.unsplash.com/800x800/?india,barber,fade" alt="Fade haircut" loading="lazy" data-reveal>
+          <img src="https://source.unsplash.com/800x800/?india,barber,beard" alt="Beard line-up" loading="lazy" data-reveal>
+          <img src="https://source.unsplash.com/800x800/?india,barber,shave" alt="Hot towel shave" loading="lazy" data-reveal>
+          <img src="https://source.unsplash.com/800x800/?india,barbershop,interior" alt="Barbershop interior" loading="lazy" data-reveal>
+          <img src="https://source.unsplash.com/800x800/?india,haircut,style" alt="Hair styling" loading="lazy" data-reveal>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact (Map Only) -->
+    <section id="contact" class="section section--accent">
+      <div class="container">
+        <header class="section-head">
+          <h2 data-i18n="findus_title">Find Us</h2>
+          <p>
+            <strong data-i18n="hours_label">Hours:</strong>
+            <span data-i18n="hours_value">Open Daily • 9:00 AM – 9:00 PM</span>
+            •
+            <strong data-i18n="phone_label">Phone:</strong>
+            <a href="tel:+919876543210">+91 98765 43210</a>
+          </p>
+        </header>
+        <div class="map-card" data-reveal>
+          <p data-i18n="address">Mr.Cutz Mens Beauty Parlour<br/>Tamil Nadu, India</p>
+          <div class="map-embed">
+            <iframe title="Google Map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3898.1044736807308!2d79.5369183!3d12.6729683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52d77eec9d4595%3A0x4d29f07905bedbe9!2sMr.Cutz%20Mens%20Beauty%20parlour!5e0!3m2!1sen!2sin!4v1722979200" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+          </div>
+          <div class="map-actions">
+            <a class="btn btn--primary" target="_blank" href="https://www.google.com/maps/place/Mr.Cutz+Mens+Beauty+parlour/" data-i18n="btn_directions">Open in Google Maps</a>
+            <a class="btn btn--ghost" href="tel:+919876543210" data-i18n="btn_call">Call</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <span class="brand-text">Mr.Cutz</span>
+        <p class="muted" data-i18n="tagline">Precision Cuts. Refined Grooming.</p>
+      </div>
+      <div class="footer-right">
+        <p><strong data-i18n="hours_label">Hours:</strong> <span data-i18n="hours_value">Open Daily • 9:00 AM – 9:00 PM</span></p>
+        <p><strong data-i18n="phone_label">Phone:</strong> <a href="tel:+919876543210">+91 98765 43210</a></p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <small>&copy; <span id="year"></span> Mr.Cutz Mens Beauty Parlour. <span data-i18n="rights">All rights reserved.</span></small>
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
